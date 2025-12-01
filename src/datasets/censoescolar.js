@@ -6,7 +6,7 @@ let instituicoesEnsino = [
     regiao: 'Nordeste',
     codigo: '1166',
     urlImagem:
-      'https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwp07dhB8eeT3U0oDUEMDLOFWIE9zPV8si5simDtS9Z-OPGWL2xV7X1IQtKzuRX3isUoIF9X2l2vOPCVLwH8XXijnrsHNf6tpFgtjou-meoulb8X9lk8BOVl2TLXYOu3g21VVNL=s1360-w1360-h1020',
+      'https://plus.unsplash.com/premium_photo-1665520347008-7b90fabae60e?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fHNjaG9vbHxlbnwwfHwwfHx8MA%3D%3D',
   },
   {
     nome: 'IFPB - Campina Grande',
@@ -15,7 +15,7 @@ let instituicoesEnsino = [
     regiao: 'Nordeste',
     codigo: '1167',
     urlImagem:
-      'https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzqdCyczY6iPgxuYQiheggaytFtRvcVqO00deMCUmVOKRQJh0bxLgQkJHv3WoR3qsac7P9CJmB1-egTv3CD1Wd64wuHGt-LzOQ9Z_OhF4GzF4CGiV4lxn4Ow6JxeurbGlFPAXXQ=s1360-w1360-h1020',
+      'https://plus.unsplash.com/premium_photo-1671070687988-b2d6805ea896?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     nome: 'IFPB - Esperança',
@@ -24,7 +24,7 @@ let instituicoesEnsino = [
     regiao: 'Nordeste',
     codigo: '1168',
     urlImagem:
-      'https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwjr8EAO9wAt7B6Yw6UnD7n3JC0TdhiOWVEsylmYsIqRphMa-a-bCaLKyxv0DxRKzpn1uLkuF-O_jBCk2hW4SQFcM8Anhmv5cOambI-RxyOtQQ987a3bOoia9LN56iv2pM0PzGO=s1360-w1360-h1020',
+      'https://images.unsplash.com/photo-1612178574161-fd59b99b6894?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
 ];
 
