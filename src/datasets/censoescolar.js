@@ -1,4 +1,4 @@
-let instituicoesEnsino = [
+let instituicoesEnsinoDataSet = [
   {
     nome: 'IFPB - Guarabira',
     municipio: 'Guarabira',
@@ -28,4 +28,4 @@ let instituicoesEnsino = [
   },
 ];
 
-export default instituicoesEnsino;
+export default instituicoesEnsinoDataSet;

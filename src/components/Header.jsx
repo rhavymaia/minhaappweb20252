@@ -2,6 +2,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { PiStudentDuotone } from 'react-icons/pi';
 
 import './Header.css';
+import { Link } from 'react-router';
 
 const Header = () => {
   return (
@@ -15,8 +16,11 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Instituições Ensino</Nav.Link>
+              <Nav.Link href="/home">Home</Nav.Link>
+              <Nav.Link href="/instituicoesensino">
+                Instituições Ensino
+              </Nav.Link>
+              <Nav.Link href="/estudantes">Estudante</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

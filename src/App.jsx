@@ -1,10 +1,26 @@
+import { BrowserRouter, Route, Routes } from 'react-router';
 import Home from './views/Home';
+import InstituicoesEnsino from './views/InstituicoesEnsino';
+import Estudante from './views/Estudante';
+import CensoEscolarLayout from './layouts/CensoEscolarLayout';
 
 function App() {
   return (
-    <>
-      <Home />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<CensoEscolarLayout />}>
+          <Route index element={<Home />}></Route>
+          <Route
+            path="instituicoesensino"
+            element={<InstituicoesEnsino />}
+          ></Route>
+          <Route
+            path="estudantes/:estudante_id"
+            element={<Estudante />}
+          ></Route>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
