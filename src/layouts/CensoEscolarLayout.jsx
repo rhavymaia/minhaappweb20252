@@ -7,7 +7,7 @@ const CensoEscolarLayout = () => {
     <>
       <Header></Header>
       <Outlet></Outlet>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </>
   );
 };
