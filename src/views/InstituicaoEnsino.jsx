@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   Button,
   Col,
@@ -13,7 +13,13 @@ import { IoSearchSharp } from 'react-icons/io5';
 
 import instituicoesEnsinoDataSet from '../datasets/censoescolar';
 
-const InstituicoesEnsino = () => {
+const InstituicaoEnsino = () => {
+  let [instituicoesEnsino, setInstituicoesEnsino] = useState([]);
+
+  useEffect(() => {
+    setInstituicoesEnsino([...instituicoesEnsinoDataSet]);
+  }, []);
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -63,7 +69,7 @@ const InstituicoesEnsino = () => {
           </tr>
         </thead>
         <tbody>
-          {instituicoesEnsinoDataSet.map((instituicaoEnsino, i) => {
+          {instituicoesEnsino.map((instituicaoEnsino, i) => {
             return (
               <tr>
                 <td>{++i}</td>
@@ -96,4 +102,4 @@ const InstituicoesEnsino = () => {
   );
 };
 
-export default InstituicoesEnsino;
+export default InstituicaoEnsino;

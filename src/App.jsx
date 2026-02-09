@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router';
 import Home from './views/Home';
-import InstituicoesEnsino from './views/InstituicoesEnsino';
+import InstituicaoEnsino from './views/InstituicaoEnsino';
 import Estudante from './views/Estudante';
 import CensoEscolarLayout from './layouts/CensoEscolarLayout';
 
@@ -12,7 +12,7 @@ function App() {
           <Route index element={<Home />}></Route>
           <Route
             path="instituicoesensino"
-            element={<InstituicoesEnsino />}
+            element={<InstituicaoEnsino />}
           ></Route>
           <Route
             path="estudantes/:estudante_id"
