@@ -17,7 +17,16 @@ const InstituicaoEnsino = () => {
   let [instituicoesEnsino, setInstituicoesEnsino] = useState([]);
 
   useEffect(() => {
-    setInstituicoesEnsino([...instituicoesEnsinoDataSet]);
+    fetch('http://localhost:3000/instituicoesensino')
+      .then((response) => {
+        return response.json();
+      })
+      .then((json) => {
+        setInstituicoesEnsino([...json]);
+      })
+      .catch((error) => {
+        console.log('Algum problema no back!');
+      });
   }, []);
 
   const [show, setShow] = useState(false);
