@@ -4,6 +4,7 @@ import InstituicaoEnsino from './views/InstituicaoEnsino';
 import Estudante from './views/Estudante';
 import CensoEscolarLayout from './layouts/CensoEscolarLayout';
 
+// Testando a branch.
 function App() {
   return (
     <BrowserRouter>
