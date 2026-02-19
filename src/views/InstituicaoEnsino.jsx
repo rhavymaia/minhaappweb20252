@@ -11,8 +11,6 @@ import {
 import { IoMdAdd } from 'react-icons/io';
 import { IoSearchSharp } from 'react-icons/io5';
 
-import instituicoesEnsinoDataSet from '../datasets/censoescolar';
-
 const InstituicaoEnsino = () => {
   let [instituicoesEnsino, setInstituicoesEnsino] = useState([]);
 
@@ -34,6 +32,25 @@ const InstituicaoEnsino = () => {
   const handleClose = () => setShow(false);
 
   const handleShow = () => setShow(true);
+
+  // const [nomeGalpao, setNomeGalpao] = useState('');
+  // const [quatidadeAves, setQuatidadeAves] = useState(0);
+
+  const [galpao, setGalpao] = useState({});
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(galpao);
+    fetch('URL', { method: 'POST', body: JSON.stringify(galpao) });
+  };
+
+  const handleChange = (e) => {
+    let value = e.target.value;
+    let name = e.target.name;
+
+    setGalpao({ ...galpao, [name]: value });
+    console.log(galpao);
+  };
 
   return (
     <Container className="mt-4">
@@ -97,15 +114,35 @@ const InstituicaoEnsino = () => {
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
+        <form onSubmit={handleSubmit}>
+          <Modal.Body>
+            <label for="nome">Nome Galpão:</label>
+            <input
+              type="text"
+              name="nome"
+              value={galpao.nome}
+              onChange={handleChange}
+            />
+
+            <label for="quatidadeAves">Quantidade Aves:</label>
+            <input
+              type="text"
+              name="quatidadeAves"
+              value={galpao.quatidadeAves}
+              onChange={handleChange}
+            />
+            {/* <button type='submit'></button>
+            <input type="submit" /> */}
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Fechar
+            </Button>
+            <Button type="submit" variant="primary" onClick={handleClose}>
+              Salvar
+            </Button>
+          </Modal.Footer>
+        </form>
       </Modal>
     </Container>
   );
